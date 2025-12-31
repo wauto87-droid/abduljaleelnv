@@ -5,7 +5,7 @@
 
 // CONFIGURATION
 // Replace this with your deployed Web App URL
-const API_URL = 'MOCK_DATA'; // 'https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec'; 
+const API_URL = 'https://script.google.com/macros/s/AKfycbwqvo51vNXqbjGXmS6VrzdxlXCDpkle8lGYLzMZo-IFp4Zm02TAYsgrk_v64t9UjKDFfQ/exec'; // 'https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec'; 
 
 async function loadGallery() {
     const galleryContainer = document.getElementById('gallery-grid');
@@ -83,3 +83,4 @@ function renderItems(items, container) {
 
 // Auto-load on page load
 document.addEventListener('DOMContentLoaded', loadGallery);
+
