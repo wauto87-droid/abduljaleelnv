@@ -1,26 +1,66 @@
 [
     {
-        "id": 1,
+        "id": "1",
+        "type": "quote",
+        "title": "The Goal of Automation",
+        "description": "Automation is not about replacing humans; it's about replacing robotic work so humans can be creative.",
+        "status": "published",
+        "created_date": "2026-01-01"
+    },
+    {
+        "id": "2",
+        "type": "quote",
+        "title": "Data Decisions",
+        "description": "Without data, you're just another person with an opinion.",
+        "status": "published",
+        "created_date": "2026-01-02"
+    },
+    {
+        "id": "3",
+        "type": "quote",
+        "title": "System Design",
+        "description": "A bad system will beat a good person every time. Fix the system.",
+        "status": "published",
+        "created_date": "2026-01-03"
+    },
+    {
+        "id": "4",
         "type": "quote",
         "title": "Efficiency",
-        "description": "I believe software should reduce dependency, not increase it.",
-        "image_url": "",
-        "status": "published"
+        "description": "Efficiency is intelligent laziness. Do it once, automate it forever.",
+        "status": "published",
+        "created_date": "2026-01-04"
     },
     {
-        "id": 2,
-        "type": "post",
-        "title": "System Architecture",
-        "description": "Just deployed a new Inventory System for a Gas Agency. Full stock tracking from empty to filled cylinders. Zero manual entry.",
-        "image_url": "",
-        "status": "published"
+        "id": "5",
+        "type": "quote",
+        "title": "Business Intelligence",
+        "description": "The goal is to turn data into information, and information into insight.",
+        "status": "published",
+        "created_date": "2026-01-05"
     },
     {
-        "id": 3,
-        "type": "image",
-        "title": "Dashboard Preview",
-        "description": "A sneak peek at the new Owner Dashboard for the Stitching Unit.",
-        "image_url": "https://placehold.co/600x400?text=Dashboard+Preview",
-        "status": "published"
+        "id": "8",
+        "type": "project",
+        "title": "Inventory System v2",
+        "description": "Just deployed a new QR-code based inventory tracker for a retail client. Reduced check-out time by 40%.",
+        "status": "published",
+        "created_date": "2026-01-08"
+    },
+    {
+        "id": "9",
+        "type": "quote",
+        "title": "Simplicity",
+        "description": "Complexity is the enemy of execution.",
+        "status": "published",
+        "created_date": "2026-01-09"
+    },
+    {
+        "id": "10",
+        "type": "thought",
+        "title": "AI in Sheets",
+        "description": "Currently experimenting with Gemini API inside Google Sheets to auto-categorize expense reports. The results are promising.",
+        "status": "published",
+        "created_date": "2026-01-10"
     }
 ]
