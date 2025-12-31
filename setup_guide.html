@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup CMS - Abdul Jaleel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .step {
+            margin-bottom: 2rem;
+            border-left: 3px solid var(--brand-primary);
+            padding-left: 1.5rem;
+        }
+
+        .step h3 {
+            color: #fff;
+        }
+
+        code {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #fab1a0;
+        }
+
+        .copy-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Abdul Jaleel<span>.</span></a>
+            <div style="color: #fff; font-weight: 600;">CMS Setup Guide</div>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container" style="max-width: 800px;">
+            <h1>How to activate your "Thoughts" Page</h1>
+            <p>Connect your website to Google Sheets to post updates instantly.</p>
+
+            <div class="card">
+                <div class="step">
+                    <h3>Step 1: Create the Sheet</h3>
+                    <p>1. Go to <a href="https://sheets.google.com" target="_blank"
+                            style="color: var(--text-accent); text-decoration: underline;">Google Sheets</a> and create
+                        a new sheet.</p>
+                    <p>2. Rename the tab (at the bottom) to <code>content</code>.</p>
+                    <p>3. In the first row, add these exact headers:</p>
+                    <div class="copy-box">id, type, title, description, image_url, created_date, status</div>
+                </div>
+
+                <div class="step">
+                    <h3>Step 2: Add the Backend Code</h3>
+                    <p>1. In the Sheet, go to <strong>Extensions > Apps Script</strong>.</p>
+                    <p>2. Delete any existing code.</p>
+                    <p>3. Copy the code from the file <code>assets/code.gs</code> in your project folder and paste it
+                        there.</p>
+                    <p>4. Save the project (Ctrl+S).</p>
+                </div>
+
+                <div class="step">
+                    <h3>Step 3: Deploy as Web App</h3>
+                    <p>1. Click the blue <strong>Deploy</strong> button (top right) > <strong>New deployment</strong>.
+                    </p>
+                    <p>2. Click the gear icon > <strong>Web app</strong>.</p>
+                    <p>3. Set <strong>Who has access</strong> to <code>Anyone</code>. (Important!)</p>
+                    <p>4. Click <strong>Deploy</strong>.</p>
+                    <p>5. Copy the <strong>Web app URL</strong> (it ends with <code>/exec</code>).</p>
+                </div>
+
+                <div class="step">
+                    <h3>Step 4: Connect the Website</h3>
+                    <p>1. Open the file <code>js/cms.js</code> in your project folder.</p>
+                    <p>2. Find the line: <code>const API_URL = 'MOCK_DATA';</code></p>
+                    <p>3. Replace <code>'MOCK_DATA'</code> with your Web App URL inside quotes.</p>
+                    <p>Example:</p>
+                    <div class="copy-box">const API_URL = 'https://script.google.com/macros/s/AKA.../exec';</div>
+                </div>
+
+                <div class="step">
+                    <h3>Step 5: Add Content</h3>
+                    <p>Go back to your Google Sheet and add rows!</p>
+                    <p>
+                        - <strong>type:</strong> quote, post, or image<br>
+                        - <strong>status:</strong> published (only these will show)<br>
+                        - <strong>image_url:</strong> Link to any image (optional)
+                    </p>
+                </div>
+
+                <a href="index.html" class="btn btn-primary">Go to Website</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

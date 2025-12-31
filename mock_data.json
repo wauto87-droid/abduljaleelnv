@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "type": "quote",
+        "title": "Efficiency",
+        "description": "I believe software should reduce dependency, not increase it.",
+        "image_url": "",
+        "status": "published"
+    },
+    {
+        "id": 2,
+        "type": "post",
+        "title": "System Architecture",
+        "description": "Just deployed a new Inventory System for a Gas Agency. Full stock tracking from empty to filled cylinders. Zero manual entry.",
+        "image_url": "",
+        "status": "published"
+    },
+    {
+        "id": 3,
+        "type": "image",
+        "title": "Dashboard Preview",
+        "description": "A sneak peek at the new Owner Dashboard for the Stitching Unit.",
+        "image_url": "https://placehold.co/600x400?text=Dashboard+Preview",
+        "status": "published"
+    }
+]
