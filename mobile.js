@@ -19,9 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (nav.classList.contains('active')) {
             icon.classList.remove('fa-bars');
             icon.classList.add('fa-xmark');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
         } else {
             icon.classList.remove('fa-xmark');
             icon.classList.add('fa-bars');
+            document.body.style.overflow = ''; // Restore scrolling
         }
     });
 
@@ -32,6 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
             const icon = hamburger.querySelector('i');
             icon.classList.remove('fa-xmark');
             icon.classList.add('fa-bars');
+            document.body.style.overflow = ''; // Restore scrolling
         });
+    });
+
+    // Close on Escape Key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+            const icon = hamburger.querySelector('i');
+            icon.classList.remove('fa-xmark');
+            icon.classList.add('fa-bars');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
     });
 });
