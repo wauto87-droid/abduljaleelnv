@@ -139,6 +139,7 @@ h1 {
 
 .text-gradient {
     background: var(--gradient-hero);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: block;
@@ -273,6 +274,7 @@ p {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     background: linear-gradient(135deg, var(--color-cyan), var(--color-blue));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -369,12 +371,211 @@ p {
     border-top: 1px solid var(--glass-border);
 }
 
-@media(max-width:768px) {
-    .hero h1 {
-        font-size: 3rem;
+/* --- Mobile Optimizations --- */
+
+/* Tablets and Small Laptops */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
     }
 
+    h2 {
+        font-size: 2.25rem;
+    }
 
+    .section {
+        padding: 6rem 0;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.75rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.35rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 2rem 0;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    .grid {
+        gap: 1.5rem;
+    }
+
+    /* Button Optimizations for Touch */
+    .btn {
+        padding: 0.875rem 2rem;
+        font-size: 0.95rem;
+        min-height: 44px;
+        /* Apple's recommended touch target */
+    }
+
+    .btn-sm {
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Make buttons stack on very small screens */
+    .hero .fade-in.delay-3 {
+        flex-direction: column !important;
+        width: 100%;
+    }
+
+    .hero .fade-in.delay-3 .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Reduce shape sizes on mobile */
+    .shape-1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .shape-2 {
+        width: 200px;
+        height: 200px;
+        border-width: 25px;
+    }
+
+    .shape-blob.shape-3 {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Reduce grid background size */
+    .grid-overlay {
+        background-size: 40px 40px;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+        letter-spacing: 1.5px;
+    }
+
+    .footer {
+        padding: 3rem 0;
+    }
+}
+
+/* Mobile Phones (Large) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.25rem;
+        line-height: 1.15;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card i {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .badge {
+        font-size: 0.65rem;
+        padding: 0.35rem 0.85rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Mobile Phones (Small) - iPhone SE, etc. */
+@media (max-width: 375px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+
+    .section {
+        padding: 2.5rem 0;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
 }
 
 /* --- Data Graphs Styling --- */
