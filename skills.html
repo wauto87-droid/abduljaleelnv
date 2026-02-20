@@ -12,25 +12,30 @@
 
 <body>
 
-    <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">Abdul Jaleel<span style="color:var(--brand-accent)">.</span></a>
-            <nav class="nav-links">
-                <a href="about.html">About</a>
-                <a href="skills.html" class="active">Skills</a>
-                <a href="projects.html">Systems</a>
-                <a href="gallery.html">Thoughts</a>
-                <a href="contact.html" class="btn btn-primary btn-sm">Contact</a>
-            </nav>
-        </div>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <nav class="container nav-content" aria-label="Main Navigation">
+            <a href="index.html" class="logo" aria-label="Abdul Jaleel Home">
+                <div class="logo-mark">A.</div>
+                <span>Jaleel</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Systems</a></li>
+                <li><a href="gallery.html">Thoughts</a></li>
+                <li><a href="contact.html" class="btn btn-outline-glow">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="section">
+    <main style="padding-top: 100px;">
+        <section class="section section-dark">
             <div class="container">
                 <div style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
-                    <h1>My Expertise</h1>
-                    <p>I specialize in building low-cost, high-impact systems using tools you already know.</p>
+                    <h1 class="section-title">My <span class="text-gold">Expertise</span></h1>
+                    <p class="section-desc">I specialize in building low-cost, high-impact systems using tools you
+                        already know.</p>
                 </div>
 
                 <div class="grid grid-2">
@@ -126,12 +131,22 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Abdul Jaleel. All rights reserved.</p>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo" aria-label="Abdul Jaleel Home">
+                    <div class="logo-mark">A.</div>
+                    <span>Jaleel</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom border-t border-white/10 mt-8 pt-6 pb-6">
+            <div class="container flex justify-between items-center text-sm text-muted">
+                <p>&copy; 2026 Abdul Jaleel NV. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-<script src="js/mobile.js"></script></body>
+    <script src="js/mobile.js"></script>
+</body>
 
 </html>
-
