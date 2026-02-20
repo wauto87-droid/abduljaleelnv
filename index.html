@@ -19,7 +19,7 @@
     <meta property="og:description"
         content="Elevating enterprise operations through data intelligence and automation. Trusted by leading corporations in KSA and worldwide.">
     <meta property="og:image" content="https://abduljaleelnv.online/assets/og-corporate.jpg">
-<meta name="google-site-verification" content="7AGtD__CeExXHjtbG7-jWCvKYrkPh_o4Ro_cin_3S5M" />
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Abdul Jaleel Melmuri | Enterprise Intelligence">
@@ -40,20 +40,79 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Schema.org Data -->
+    <!-- Advanced Knowledge Graph Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ConsultingService",
-      "name": "Abdul Jaleel Melmuri - Data & Automation Intelligence",
-      "image": "https://abduljaleelnv.online/assets/logo.png",
-      "description": "Premium data analytics, enterprise automation, and business intelligence consulting tailored for high-value clients across KSA and international markets.",
-      "url": "https://abduljaleelnv.online",
-      "provider": {
-        "@type": "Person",
-        "name": "Abdul Jaleel NV"
-      },
-      "areaServed": ["Saudi Arabia", "United Arab Emirates", "Worldwide"],
-      "serviceType": ["Data Analytics", "Business Intelligence", "Enterprise Automation"]
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://abduljaleelnv.online/#person",
+          "name": "Abdul Jaleel NV",
+          "alternateName": ["Abdul Jaleel Melmuri", "Abdul Jaleel N.V.", "Abdul Jaleel"],
+          "url": "https://abduljaleelnv.online/",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://abduljaleelnv.online/assets/og-corporate.jpg",
+            "caption": "Abdul Jaleel NV - Enterprise Data & Automation Expert"
+          },
+          "jobTitle": "Enterprise Data Architect & Automation Specialist",
+          "description": "Abdul Jaleel NV (Melmuri) is a renowned cybersecurity enthusiast turned Enterprise Data Architect. He specializes in business intelligence, process automation, and zero-trust data ecosystems for top-tier corporations in Saudi Arabia and worldwide.",
+          "homeLocation": {
+            "@type": "City",
+            "name": "Melmuri, Malappuram",
+            "containedInPlace": {
+              "@type": "State",
+              "name": "Kerala",
+              "addressCountry": "India"
+            }
+          },
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Abdul Jaleel NV Consulting"
+          },
+          "alumniOf": {
+            "@type": "Organization",
+            "name": "Cybersecurity & Data Science Institute"
+          },
+          "knowsAbout": [
+            "Data Analytics",
+            "Business Intelligence (BI)",
+            "Process Automation",
+            "Cybersecurity",
+            "Enterprise Architecture",
+            "Google Apps Script",
+            "Data Modeling"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/abduljaleel",
+            "https://github.com/abduljaleel"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://abduljaleelnv.online/#website",
+          "url": "https://abduljaleelnv.online/",
+          "name": "Abdul Jaleel Melmuri | Enterprise Data & Automation Solutions",
+          "description": "Official corporate portfolio of Abdul Jaleel NV Melmuri.",
+          "publisher": {
+            "@id": "https://abduljaleelnv.online/#person"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://abduljaleelnv.online/#service",
+          "name": "Abdul Jaleel NV Enterprise Solutions",
+          "url": "https://abduljaleelnv.online/",
+          "founder": {
+            "@id": "https://abduljaleelnv.online/#person"
+          },
+          "description": "Premium data analytics, enterprise automation, and business intelligence consulting tailored for high-value clients across KSA and international markets.",
+          "areaServed": ["Saudi Arabia", "United Arab Emirates", "Worldwide"],
+          "priceRange": "$$$"
+        }
+      ]
     }
     </script>
 </head>
@@ -664,6 +723,5 @@
         });
     </script>
 </body>
-
 
 </html>
