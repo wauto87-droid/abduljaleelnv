@@ -776,6 +776,17 @@ ul {
     justify-content: center;
 }
 
+#three-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
 .glass-panel {
     background: rgba(17, 34, 64, 0.45);
     backdrop-filter: blur(8px);
